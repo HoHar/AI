@@ -24,3 +24,8 @@
 .message table tbody tr:last-of-type {
   border-bottom: 2px solid #64748b40;
 }
+
+
+.userimg{
+        background-image: url(https://1tb.plus/cdn/human.png);        
+        }
