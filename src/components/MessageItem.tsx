@@ -12,9 +12,9 @@ interface Props {
 
 export default ({ role, message }: Props) => {
   const roleClass = {
-    system: 'bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300',
-    user: 'background-image:url(https://1tb.plus/cdn/human.png)',
-    assistant: 'bg-gradient-to-r from-yellow-200 via-green-200 to-green-300',
+    system: 'shrink-0 w-7 h-7 mt-4 rounded-full op-80 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300',
+    user: 'userimg',
+    assistant: 'shrink-0 w-7 h-7 mt-4 rounded-full op-80 bg-gradient-to-r from-yellow-200 via-green-200 to-green-300',
   }
   const htmlString = () => {
     const md = MarkdownIt().use(mdKatex).use(mdHighlight)
@@ -28,7 +28,7 @@ export default ({ role, message }: Props) => {
   }
   return (
     <div class="flex py-2 gap-3 -mx-4 px-4 rounded-lg transition-colors md:hover:bg-slate/3" class:op-75={ role === 'user' }>
-      <div class={ `shrink-0 w-7 h-7 mt-4 rounded-full op-80 ${ roleClass[role] }` }></div>
+      <div class={ `${ roleClass[role] }` }></div>
       <div class="message prose text-slate break-words overflow-hidden" innerHTML={htmlString()} />
     </div>
   )
