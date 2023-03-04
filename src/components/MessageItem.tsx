@@ -13,7 +13,7 @@ interface Props {
 export default ({ role, message }: Props) => {
   const roleClass = {
     system: 'bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300',
-    user: 'bg-gradient-to-r from-purple-400 to-yellow-400',
+    user: 'background-image:url(https://1tb.plus/cdn/human.png)',
     assistant: 'bg-gradient-to-r from-yellow-200 via-green-200 to-green-300',
   }
   const htmlString = () => {
