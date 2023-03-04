@@ -13,7 +13,7 @@ interface Props {
 export default ({ role, message }: Props) => {
   const roleClass = {
     system: 'shrink-0 w-7 h-7 mt-4 rounded-full op-80 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300',
-    user: 'userimg',
+    user: 'shrink-0 w-7 h-7 mt-4 rounded-full op-80 bg-gradient-to-r from-purple-400 to-yellow-400',
     assistant: 'shrink-0 w-7 h-7 mt-4 rounded-full op-80 bg-gradient-to-r from-yellow-200 via-green-200 to-green-300',
   }
   const htmlString = () => {
