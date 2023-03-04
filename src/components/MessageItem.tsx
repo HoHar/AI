@@ -28,7 +28,7 @@ export default ({ role, message }: Props) => {
   }
   return (
     <div class="flex py-2 gap-3 -mx-4 px-4 rounded-lg transition-colors md:hover:bg-slate/3" class:op-75={ role === 'user' }>
-      <div class={ `${ roleClass[role] }` }></div>
+      <div class={ `${ roleClass[role] }` }> </div>
       <div class="message prose text-slate break-words overflow-hidden" innerHTML={htmlString()} />
     </div>
   )
